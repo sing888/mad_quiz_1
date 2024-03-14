@@ -1,5 +1,6 @@
 package com.project.group.rupp.dse.madquiz1
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -31,8 +32,10 @@ class MainViewModel:ViewModel() {
             }
 
             override fun onFailure(call: Call<Main>, t: Throwable) {
-
+                // Log the error or handle it appropriately
+                Log.e("MainViewModel", "Failed to fetch data: ${t.message}")
             }
+
 
         })
 

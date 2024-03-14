@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             val userData = main.data
             userData?.let {
                 binding.txtName.text = "${userData.firstName} ${userData.lastName}"
+                binding.txtName2.text = "${userData.firstName} ${userData.lastName}"
                 binding.txtBio.text = userData.bio
                 binding.txtFriend.text = userData.friendCount.toString() // Convert to String
                 binding.txtJob.text = userData.job
@@ -50,13 +51,14 @@ class MainActivity : AppCompatActivity() {
                 // Load cover image using Picasso
                 Picasso.get().load(userData.coverImage).into(binding.picCover)
 
-
+                showLoading(false)
             } ?: run {
                 Toast.makeText(this@MainActivity, "Error: No data received", Toast.LENGTH_SHORT)
                     .show()
+                showLoading(false)
             }
         }
-        showLoading(false)
+
     }
 
     private fun showLoading(isLoading: Boolean) {

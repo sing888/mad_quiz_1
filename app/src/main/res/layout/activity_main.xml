@@ -7,13 +7,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -27,10 +20,11 @@
             android:layout_marginHorizontal="10dp"/>
 
         <TextView
+            android:id="@+id/txt_name2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Sok Sao"
+            android:text="Name"
             android:textSize="24sp"
             android:layout_marginLeft="50dp"/>
 
@@ -39,6 +33,12 @@
             android:layout_height="25dp"
             android:src="@drawable/ic_dropdown"
             android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone" />
 
         <ImageView
             android:layout_width="30dp"
@@ -91,7 +91,7 @@
             android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sok Sao"
+            android:text="Name"
             android:textSize="24sp"
             android:textStyle="bold"/>
 
@@ -121,7 +121,7 @@
             android:id="@+id/txt_bio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Love travelling"
+            android:text="Bio"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -186,7 +186,7 @@
                 android:id="@+id/txt_job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Student"
+                android:text="Job"
                 android:textSize="18sp"
                 android:layout_marginLeft="5dp"/>
 
@@ -203,7 +203,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Royal University of Phnom Penh"
+                android:text="Place"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
@@ -227,7 +227,7 @@
             android:id="@+id/txt_love"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Single"
+            android:text="Love"
             android:textSize="18sp"
             android:layout_marginLeft="5dp"/>
 

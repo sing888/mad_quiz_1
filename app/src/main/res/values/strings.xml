@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mad quiz 1</string>
+    <string name="friends">friends</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="see_about_info">See your About info</string>
+    <string name="edit_public_detail">Edit public detail</string>
+</resources>
